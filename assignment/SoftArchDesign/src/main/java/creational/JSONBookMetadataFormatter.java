@@ -39,7 +39,7 @@ public class JSONBookMetadataFormatter implements BookMetadataFormatter {
         return rootObject.toString();
     }
 
-    // just utility function to reduce duplicate code
+    // just utility function for avoid duplicate code
     public static JSONObject getMetadataJSON(Book b){
         final JSONObject j = new JSONObject();
         final List<String> l = Arrays.asList(b.getAuthors());

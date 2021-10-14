@@ -1,8 +1,11 @@
 package creational;
 
+import java.io.IOException;
+
 public class JSONBookMetadataExporter extends BookMetadataExporter {
+
     @Override
-    protected BookPrintable getPrinter() {
-        return new JSONPrinter();
+    protected BookMetadataFormatter getFormatter() throws IOException {
+        return new JSONBookMetadataFormatter();
     }
 }
