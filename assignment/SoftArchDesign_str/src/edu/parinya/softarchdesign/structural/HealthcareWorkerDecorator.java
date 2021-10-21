@@ -4,7 +4,7 @@ public abstract class HealthcareWorkerDecorator extends HealthcareWorker {
     HealthcareWorker worker;
 
     public HealthcareWorkerDecorator(HealthcareWorker worker) {
-        super(worker.getName(),worker.getPrice());
+        super(worker);
         System.out.print("Decorate "+worker.getName()+ " with ");
         this.worker = worker;
     }
