@@ -25,7 +25,7 @@ public class StringPublisher implements Flow.Publisher<String> {
             while (matcher.find()) {
                 System.out.print("Found match: " + matcher.group());
                 System.out.println(" Publish to " + subscriber.getClass().getName());
-                subscriber.onNext(matcher.group());
+                subscriber.onNext(message);
             }
         }
 
